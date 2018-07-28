@@ -1,0 +1,707 @@
+|alu_board
+SW[0] => alu:alud.b[0]
+SW[0] => alu:aluh.b[0]
+SW[0] => bin2dec:b_dec.SW[0]
+SW[0] => bin2hex:b_hex.SW[0]
+SW[1] => alu:alud.b[1]
+SW[1] => alu:aluh.b[1]
+SW[1] => bin2dec:b_dec.SW[1]
+SW[1] => bin2hex:b_hex.SW[1]
+SW[2] => alu:alud.b[2]
+SW[2] => alu:aluh.b[2]
+SW[2] => bin2dec:b_dec.SW[2]
+SW[2] => bin2hex:b_hex.SW[2]
+SW[3] => alu:alud.b[3]
+SW[3] => alu:aluh.b[3]
+SW[3] => bin2dec:b_dec.SW[3]
+SW[3] => bin2hex:b_hex.SW[3]
+SW[3] => HEX3.DATAB
+SW[4] => alu:alud.a[0]
+SW[4] => alu:aluh.a[0]
+SW[4] => bin2dec:a_dec.SW[0]
+SW[4] => bin2hex:a_hex.SW[0]
+SW[5] => alu:alud.a[1]
+SW[5] => alu:aluh.a[1]
+SW[5] => bin2dec:a_dec.SW[1]
+SW[5] => bin2hex:a_hex.SW[1]
+SW[6] => alu:alud.a[2]
+SW[6] => alu:aluh.a[2]
+SW[6] => bin2dec:a_dec.SW[2]
+SW[6] => bin2hex:a_hex.SW[2]
+SW[7] => alu:alud.a[3]
+SW[7] => alu:aluh.a[3]
+SW[7] => bin2dec:a_dec.SW[3]
+SW[7] => bin2hex:a_hex.SW[3]
+SW[7] => HEX5.DATAB
+SW[8] => alu:alud.s1
+SW[8] => alu:aluh.s1
+SW[8] => process_0.IN0
+SW[8] => process_0.IN0
+SW[9] => process_0.IN1
+SW[9] => alu:alud.s0
+SW[9] => alu:aluh.s0
+SW[9] => process_0.IN1
+HEX5[0] << <VCC>
+HEX5[1] << <VCC>
+HEX5[2] << <VCC>
+HEX5[3] << <VCC>
+HEX5[4] << <VCC>
+HEX5[5] << <VCC>
+HEX5[6] << HEX5.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[0] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[1] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[2] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[3] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] << HEX4.DB_MAX_OUTPUT_PORT_TYPE
+HEX3[0] << <VCC>
+HEX3[1] << <VCC>
+HEX3[2] << <VCC>
+HEX3[3] << <VCC>
+HEX3[4] << <VCC>
+HEX3[5] << <VCC>
+HEX3[6] << HEX3.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[0] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[1] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[2] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[3] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[4] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[5] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX2[6] << HEX2.DB_MAX_OUTPUT_PORT_TYPE
+HEX1[0] << <VCC>
+HEX1[1] << <VCC>
+HEX1[2] << <VCC>
+HEX1[3] << <VCC>
+HEX1[4] << <VCC>
+HEX1[5] << <VCC>
+HEX1[6] << HEX1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] << HEX0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud
+a[0] => aux.IN0
+a[0] => aux.IN0
+a[0] => ripple_carry:sm.x[0]
+a[0] => ripple_carry:su.x[0]
+a[1] => aux.IN0
+a[1] => aux.IN0
+a[1] => ripple_carry:sm.x[1]
+a[1] => ripple_carry:su.x[1]
+a[2] => aux.IN0
+a[2] => aux.IN0
+a[2] => ripple_carry:sm.x[2]
+a[2] => ripple_carry:su.x[2]
+a[3] => aux.IN0
+a[3] => aux.IN0
+a[3] => ripple_carry:sm.x[3]
+a[3] => ripple_carry:su.x[3]
+b[0] => aux.IN1
+b[0] => aux.IN1
+b[0] => ripple_carry:sm.y[0]
+b[0] => ripple_carry:su.y[0]
+b[1] => aux.IN1
+b[1] => aux.IN1
+b[1] => ripple_carry:sm.y[1]
+b[1] => ripple_carry:su.y[1]
+b[2] => aux.IN1
+b[2] => aux.IN1
+b[2] => ripple_carry:sm.y[2]
+b[2] => ripple_carry:su.y[2]
+b[3] => aux.IN1
+b[3] => aux.IN1
+b[3] => ripple_carry:sm.y[3]
+b[3] => ripple_carry:su.y[3]
+F[0] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F.DB_MAX_OUTPUT_PORT_TYPE
+s0 => process_0.IN0
+s0 => process_0.IN0
+s0 => process_0.IN0
+s1 => process_0.IN1
+s1 => process_0.IN1
+s1 => process_0.IN1
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:sm
+x[0] => full_adder:stage0.x
+x[1] => full_adder:stage1.x
+x[2] => full_adder:stage2.x
+x[3] => full_adder:stage3.x
+y[0] => full_adder:stage0.y
+y[1] => full_adder:stage1.y
+y[2] => full_adder:stage2.y
+y[3] => full_adder:stage3.y
+r[0] <= full_adder:stage0.r
+r[1] <= full_adder:stage1.r
+r[2] <= full_adder:stage2.r
+r[3] <= full_adder:stage3.r
+cin => full_adder:stage0.cin
+cout <= full_adder:stage3.cout
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:sm|full_adder:stage0
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:sm|full_adder:stage1
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:sm|full_adder:stage2
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:sm|full_adder:stage3
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:su
+x[0] => full_adder:stage0.x
+x[1] => full_adder:stage1.x
+x[2] => full_adder:stage2.x
+x[3] => full_adder:stage3.x
+y[0] => full_adder:stage0.y
+y[1] => full_adder:stage1.y
+y[2] => full_adder:stage2.y
+y[3] => full_adder:stage3.y
+r[0] <= full_adder:stage0.r
+r[1] <= full_adder:stage1.r
+r[2] <= full_adder:stage2.r
+r[3] <= full_adder:stage3.r
+cin => full_adder:stage0.cin
+cout <= full_adder:stage3.cout
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:su|full_adder:stage0
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:su|full_adder:stage1
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:su|full_adder:stage2
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:alud|ripple_carry:su|full_adder:stage3
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh
+a[0] => aux.IN0
+a[0] => aux.IN0
+a[0] => ripple_carry:sm.x[0]
+a[0] => ripple_carry:su.x[0]
+a[1] => aux.IN0
+a[1] => aux.IN0
+a[1] => ripple_carry:sm.x[1]
+a[1] => ripple_carry:su.x[1]
+a[2] => aux.IN0
+a[2] => aux.IN0
+a[2] => ripple_carry:sm.x[2]
+a[2] => ripple_carry:su.x[2]
+a[3] => aux.IN0
+a[3] => aux.IN0
+a[3] => ripple_carry:sm.x[3]
+a[3] => ripple_carry:su.x[3]
+b[0] => aux.IN1
+b[0] => aux.IN1
+b[0] => ripple_carry:sm.y[0]
+b[0] => ripple_carry:su.y[0]
+b[1] => aux.IN1
+b[1] => aux.IN1
+b[1] => ripple_carry:sm.y[1]
+b[1] => ripple_carry:su.y[1]
+b[2] => aux.IN1
+b[2] => aux.IN1
+b[2] => ripple_carry:sm.y[2]
+b[2] => ripple_carry:su.y[2]
+b[3] => aux.IN1
+b[3] => aux.IN1
+b[3] => ripple_carry:sm.y[3]
+b[3] => ripple_carry:su.y[3]
+F[0] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F.DB_MAX_OUTPUT_PORT_TYPE
+s0 => process_0.IN0
+s0 => process_0.IN0
+s0 => process_0.IN0
+s1 => process_0.IN1
+s1 => process_0.IN1
+s1 => process_0.IN1
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+N <= N.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:sm
+x[0] => full_adder:stage0.x
+x[1] => full_adder:stage1.x
+x[2] => full_adder:stage2.x
+x[3] => full_adder:stage3.x
+y[0] => full_adder:stage0.y
+y[1] => full_adder:stage1.y
+y[2] => full_adder:stage2.y
+y[3] => full_adder:stage3.y
+r[0] <= full_adder:stage0.r
+r[1] <= full_adder:stage1.r
+r[2] <= full_adder:stage2.r
+r[3] <= full_adder:stage3.r
+cin => full_adder:stage0.cin
+cout <= full_adder:stage3.cout
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:sm|full_adder:stage0
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:sm|full_adder:stage1
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:sm|full_adder:stage2
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:sm|full_adder:stage3
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:su
+x[0] => full_adder:stage0.x
+x[1] => full_adder:stage1.x
+x[2] => full_adder:stage2.x
+x[3] => full_adder:stage3.x
+y[0] => full_adder:stage0.y
+y[1] => full_adder:stage1.y
+y[2] => full_adder:stage2.y
+y[3] => full_adder:stage3.y
+r[0] <= full_adder:stage0.r
+r[1] <= full_adder:stage1.r
+r[2] <= full_adder:stage2.r
+r[3] <= full_adder:stage3.r
+cin => full_adder:stage0.cin
+cout <= full_adder:stage3.cout
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:su|full_adder:stage0
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:su|full_adder:stage1
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:su|full_adder:stage2
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|alu:aluh|ripple_carry:su|full_adder:stage3
+x => r.IN0
+x => cout.IN0
+x => cout.IN0
+y => r.IN1
+y => cout.IN1
+y => cout.IN0
+r <= r.DB_MAX_OUTPUT_PORT_TYPE
+cin => r.IN1
+cin => cout.IN1
+cin => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2dec:f_dec
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN10
+SW[0] => Mux3.IN10
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN9
+SW[1] => Mux3.IN9
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN8
+SW[2] => Mux3.IN8
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2hex:f_hex
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN19
+SW[0] => Mux3.IN19
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN18
+SW[1] => Mux3.IN18
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN17
+SW[2] => Mux3.IN17
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux2.IN16
+SW[3] => Mux3.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2dec:a_dec
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN10
+SW[0] => Mux3.IN10
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN9
+SW[1] => Mux3.IN9
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN8
+SW[2] => Mux3.IN8
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2dec:b_dec
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN10
+SW[0] => Mux3.IN10
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN9
+SW[1] => Mux3.IN9
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN8
+SW[2] => Mux3.IN8
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2hex:a_hex
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN19
+SW[0] => Mux3.IN19
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN18
+SW[1] => Mux3.IN18
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN17
+SW[2] => Mux3.IN17
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux2.IN16
+SW[3] => Mux3.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_board|bin2hex:b_hex
+SW[0] => Mux0.IN19
+SW[0] => Mux1.IN19
+SW[0] => Mux2.IN19
+SW[0] => Mux3.IN19
+SW[0] => Mux4.IN19
+SW[0] => Mux5.IN19
+SW[0] => Mux6.IN19
+SW[1] => Mux0.IN18
+SW[1] => Mux1.IN18
+SW[1] => Mux2.IN18
+SW[1] => Mux3.IN18
+SW[1] => Mux4.IN18
+SW[1] => Mux5.IN18
+SW[1] => Mux6.IN18
+SW[2] => Mux0.IN17
+SW[2] => Mux1.IN17
+SW[2] => Mux2.IN17
+SW[2] => Mux3.IN17
+SW[2] => Mux4.IN17
+SW[2] => Mux5.IN17
+SW[2] => Mux6.IN17
+SW[3] => Mux0.IN16
+SW[3] => Mux1.IN16
+SW[3] => Mux2.IN16
+SW[3] => Mux3.IN16
+SW[3] => Mux4.IN16
+SW[3] => Mux5.IN16
+SW[3] => Mux6.IN16
+HEX0[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

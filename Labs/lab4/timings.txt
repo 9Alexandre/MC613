@@ -1,0 +1,8 @@
+N	Delay
+4	8.070
+8	11.495
+16	7.888
+32	11.775
+64	11.776
+
+O delay foi crescente na maioria dos casos, isso ocorreu devido ao aumento de entradas e saidas. Apenas quando N=16, houve um resultado fora do padrão.

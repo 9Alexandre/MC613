@@ -1,0 +1,194 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ec2016/ra165232/MC613/lab7/parte1/simulation/qsim
+Eshift_register
+Z1 w1523985310
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z11 8lab7parte1.vho
+Z12 Flab7parte1.vho
+l0
+L38
+VUjjkh^KCfj[lMcm5KD`A`3
+!s100 :?;4eg5i`1P;9Oo2VQla61
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1523985311
+!i10b 1
+Z15 !s108 1523985311.000000
+Z16 !s90 -work|work|lab7parte1.vho|
+Z17 !s107 lab7parte1.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 14 shift_register 0 22 Ujjkh^KCfj[lMcm5KD`A`3
+l103
+L48
+VbZo?[^XYnDciNk?4LR]hE1
+!s100 ih3]POK6CQmn2d6Y^m5jU0
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eshift_register_board
+Z20 w1523478123
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+R11
+R12
+l0
+L38
+V<DOM@W8igV]X3SE=TNnPX2
+!s100 ^KQ]R:=LOoB50^;_OeVjJ1
+R13
+32
+Z21 !s110 1523478124
+!i10b 1
+Z22 !s108 1523478124.000000
+R16
+R17
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 20 shift_register_board 0 22 <DOM@W8igV]X3SE=TNnPX2
+l117
+L65
+VZg2VBf=mYgh`@Cf;R;Vz40
+!s100 IPUbW:cSLGU_=R8f4KRnb0
+R13
+32
+R21
+!i10b 1
+R22
+R16
+R17
+!i113 1
+R18
+R19
+Eshift_register_board_vhd_vec_tst
+Z23 w1523478122
+R8
+R9
+R0
+Z24 8../Waveform.vwf.vht
+Z25 F../Waveform.vwf.vht
+l0
+L31
+VTJcMinYMbf:1joj;Y5DnX2
+!s100 ^o5DeMX7?hEif^F;U[f531
+R13
+32
+R21
+!i10b 1
+R22
+Z26 !s90 -work|work|../Waveform.vwf.vht|
+Z27 !s107 ../Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Ashift_register_board_arch
+R8
+R9
+DEx4 work 32 shift_register_board_vhd_vec_tst 0 22 TJcMinYMbf:1joj;Y5DnX2
+l46
+L33
+V_^nfG`idNzg1[2TNB;;e@3
+!s100 9SGi::@JZKfLHB?THiAX`2
+R13
+32
+R21
+!i10b 1
+R22
+R26
+R27
+!i113 1
+R18
+R19
+Eshift_register_vhd_vec_tst
+Z28 w1523985309
+R8
+R9
+R0
+Z29 8Waveform.vwf.vht
+Z30 FWaveform.vwf.vht
+l0
+L31
+V=ITJF@GLaM<;BjgaeI6a>1
+!s100 2o?GU6UTEzX^mg7mzo]oC1
+R13
+32
+Z31 !s110 1523985312
+!i10b 1
+R15
+Z32 !s90 -work|work|Waveform.vwf.vht|
+Z33 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Ashift_register_arch
+R8
+R9
+Z34 DEx4 work 26 shift_register_vhd_vec_tst 0 22 =ITJF@GLaM<;BjgaeI6a>1
+l50
+L33
+VTlggN8LEf<ok8;<nU?Z_12
+!s100 5@9MZ=oIeCJ`l1bMbf;8Z3
+R13
+32
+R31
+!i10b 1
+R15
+R32
+R33
+!i113 1
+R18
+R19

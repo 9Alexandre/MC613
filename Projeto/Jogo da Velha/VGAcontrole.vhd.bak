@@ -1,0 +1,201 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+LIBRARY VGA;
+USE VGA.ALL;
+
+ENTITY VGAcontrole IS
+	PORT (
+			SW									: IN STD_LOGIC_VECTOR(0 downto 0); -- modo
+			KEY								: IN STD_LOGIC_VECTOR(0 downto 0); -- restart
+		
+			CLOCK_50							: IN STD_LOGIC;
+			VGA_R, VGA_G, VGA_B			: OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
+			VGA_HS, VGA_VS					: OUT STD_LOGIC;
+			VGA_BLANK_N, VGA_SYNC_N 	: OUT STD_LOGIC;
+			VGA_CLK 							: OUT STD_LOGIC
+	);
+END ENTITY;
+
+ARCHITECTURE behavior OF VGAcontrole IS
+	
+	SIGNAL video_address			: INTEGER RANGE 0 TO 128* 96 - 1;
+	SIGNAL video_word				: STD_LOGIC_VECTOR (2 DOWNTO 0);
+	
+	
+	SIGNAL switch, reset, clk50M, sync, blank : std_logic;
+	
+	
+	SIGNAL lin_ini, lin_fim : integer range 0 to 95;
+	SIGNAL col_ini, col_fim : integer range 0 to 127;
+	
+	
+	SIGNAL jogadas_p1, jogadas_p2		:  std_logic_vector(9 downto 1);
+	SIGNAL vencedor 						: 	std_logic_vector(2 downto 1);
+	
+	
+BEGIN
+	switch <= SW(0);
+	reset <= KEY(0);
+	clk50M <= CLOCK_50;
+	
+	vga_component: vgacon
+	GENERIC MAP (
+						NUM_HORZ_PIXELS => 128,
+						NUM_VERT_PIXELS => 96
+	)
+	PORT MAP (
+					clk50M			=> clk50M,
+					rstn				=> reset,
+					write_clk		=> clk50M,
+					write_enable	=> '1',
+					write_addr     => video_address,
+					vga_clk			=> VGA_CLK,
+					data_in        => video_word,
+					red				=> VGA_R,
+					green				=> VGA_G,
+					blue				=> VGA_B,
+					hsync				=> VGA_HS,
+					vsync				=> VGA_VS,
+					sync				=> sync,
+					blank				=> blank
+	);
+	
+	VGA_SYNC_N <= NOT sync;
+	VGA_BLANK_N <= NOT blank;
+	
+	-- Tabuleiro
+	PROCESS (CLOCK_50)
+	BEGIN
+		IF (rising_edge(CLOCK_50)) THEN
+		
+			FOR i IN 0 TO 95 LOOP
+				FOR j IN 46 TO 48 LOOP
+					video_address <= i + (j * 128);
+					video_word <= "001";
+				END LOOP;
+			END LOOP;
+			
+			FOR i IN 0 TO 95 LOOP
+				FOR j IN 79 TO 81 LOOP
+					video_address <= i + (j * 128);
+					video_word <= "001";
+				END LOOP;
+			END LOOP;
+			
+			FOR i IN 30 TO 32 LOOP
+				FOR j IN 16 TO 111 LOOP
+					video_address <= i + (j * 128);
+					video_word <= "001";
+				END LOOP;
+			END LOOP;
+			
+			FOR i IN 63 TO 65 LOOP
+				FOR j IN 16 TO 111 LOOP
+					video_address <= i + (j * 128);
+					video_word <= "001";
+				END LOOP;
+			END LOOP;
+		
+		END IF;
+	END PROCESS;
+	
+	-------------------------------------------------------------
+	
+	
+	
+	Jogo: jogoLogica PORT MAP(SW, KEY, jogadas_p1, jogadas_p2, vencedor);
+	
+	-- Celulas do tabuleiro
+	PROCESS(CLOCK_50, jogadas_p1, jogadas_p2)
+	BEGIN
+		IF rising_edge(CLOCK_50) THEN
+	
+			-- #1
+			IF jogadas_p1(1) = '1' OR  jogadas_p2(1) = '1' THEN
+		
+				IF jogadas_p1(1) = '1' THEN
+					video_word <= "010";
+				ELSE
+					video_word <= "011";
+				END IF;
+				
+				FOR i lin_ini TO lin_fim LOOP
+					FOR j col_ini TO col_fim LOOP
+						video_address <= i + (j * 128);
+					END LOOP;
+				END LOOP;
+				
+			END IF;
+			
+			-- #2
+			IF jogadas_p1(2) = '1' OR  jogadas_p2(2) = '1' THEN
+		
+				IF jogadas_p1(2) = '1' THEN
+					video_word <= "010";
+				ELSE
+					video_word <= "011";
+				END IF;
+				
+				FOR i lin_ini TO lin_fim LOOP
+					FOR j col_ini TO col_fim LOOP
+						video_address <= i + (j * 128);
+					END LOOP;
+				END LOOP;
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+	-- #9
+	IF jogadas_p1(9) = '1' OR  jogadas_p2(9) = '1' THEN
+
+		lin_ini := 75;
+		lin_fim := 84;
+		col_ini := 91;
+		col_fim := 100;
+		
+		IF jogadas_p1(9) = '1' THEN
+			video_word <= "010";
+		ELSE
+			video_word <= "011";
+		END IF;
+	END IF;
+		
+		
+		for i lin_ini to lin_fim loop
+			for j col_ini to col_fim loop
+				video_address <= i + (j * 128);
+			end loop
+		end loop
+		
+	END PROCESS;
+		
+		
+	-- restart
+	PROCESS()
+	BEGIN
+	
+	IF KEY = "1" THEN
+		video_word = "000";
+	
+	
+	
+	
+	
+		
+	
+	END IF;
+	
+	
+	
+	
+
+END behavior;

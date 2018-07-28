@@ -1,0 +1,98 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+
+ENTITY logicaDoJogo IS
+	PORT (
+			clock : IN STD_LOGIC;
+			modo							: IN STD_LOGIC;
+			restart						: IN STD_LOGIC; 	
+			jorgador1, jogador2		: out std_logic_vector(9 downto 1);
+			vencedor 					: out std_logic_vector(2 downto 1)
+		
+	);
+END ENTITY;
+
+ARCHITECTURE behavior OF logicaDoJogo  IS
+
+	SIGNAL jogadas_p1, jogadas_p2		:  std_logic_vector(9 downto 1);
+
+BEGIN
+
+	PROCESS(Clock)
+	BEGIN
+	
+	IF rising_edge(Clock) THEN
+	
+		-- Reinicia o jogo
+		IF restart = '1' THEN
+			jogadas_p1 <= "000000000";
+			jogadas_p2 <= "000000000";
+		END IF;
+	
+	-- Detecta o vencedor
+	IF (	-- horizontal
+			(jogadas_p1(1) = '1' and jogadas_p1(2) = '1' and jogadas_p1(3) = '1') OR
+			(jogadas_p1(4) = '1' and jogadas_p1(5) = '1' and jogadas_p1(6) = '1') OR
+			(jogadas_p1(7) = '1' and jogadas_p1(8) = '1' and jogadas_p1(9) = '1') OR
+			-- vertical
+			(jogadas_p1(1) = '1' and jogadas_p1(4) = '1' and jogadas_p1(7) = '1') OR
+			(jogadas_p1(2) = '1' and jogadas_p1(5) = '1' and jogadas_p1(8) = '1') OR
+			(jogadas_p1(2) = '1' and jogadas_p1(6) = '1' and jogadas_p1(9) = '1') OR			
+			-- diagonal
+			(jogadas_p1(1) = '1' and jogadas_p1(5) = '1' and jogadas_p1(9) = '1') OR
+			(jogadas_p1(3) = '1' and jogadas_p1(5) = '1' and jogadas_p1(7) = '1') ) THEN
+			
+			vencedor <= "10";
+			
+	ELSIF(-- horizontal
+			(jogadas_p2(1) = '1' and jogadas_p2(2) = '1' and jogadas_p2(3) = '1') OR
+			(jogadas_p2(4) = '1' and jogadas_p2(5) = '1' and jogadas_p2(6) = '1') OR
+			(jogadas_p2(7) = '1' and jogadas_p2(8) = '1' and jogadas_p2(9) = '1') OR	
+			-- vertical
+			(jogadas_p2(1) = '1' and jogadas_p2(4) = '1' and jogadas_p2(7) = '1') OR
+			(jogadas_p2(2) = '1' and jogadas_p2(5) = '1' and jogadas_p2(8) = '1') OR
+			(jogadas_p2(2) = '1' and jogadas_p2(6) = '1' and jogadas_p2(9) = '1') OR	
+			-- diagonal
+			(jogadas_p2(1) = '1' and jogadas_p2(5) = '1' and jogadas_p2(9) = '1') OR
+			(jogadas_p2(3) = '1' and jogadas_p2(5) = '1' and jogadas_p2(7) = '1') ) THEN
+			
+			vencedor <= "01";
+			
+	ELSE
+			vencedor <= "00";
+	END IF;
+	END IF;
+	
+	END PROCESS;
+	
+			
+END behavior;	
+			
+			
+	
+	
+	
+	
+	
+	
+	
+			
+			
+			
+
+
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+

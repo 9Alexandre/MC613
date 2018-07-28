@@ -1,0 +1,16 @@
+
+State Machine - |VGAcontrole|logicaDoJogo:jogo|Q
+Name Q.Vitoria Q.CPU Q.P2 Q.P1 Q.inicio 
+Q.inicio 0 0 0 0 0 
+Q.P1 0 0 0 1 1 
+Q.P2 0 0 1 0 1 
+Q.CPU 0 1 0 0 1 
+Q.Vitoria 1 0 0 0 1 
+
+State Machine - |VGAcontrole|ps2_mouse:Mouse|mouse_ctrl:mousectrl|state
+Name state.CLEAR state.NEXTCMD state.WAITACK state.SEND state.SETCMD 
+state.SETCMD 0 0 0 0 0 
+state.SEND 0 0 0 1 1 
+state.WAITACK 0 0 1 0 1 
+state.NEXTCMD 0 1 0 0 1 
+state.CLEAR 1 0 0 0 1 

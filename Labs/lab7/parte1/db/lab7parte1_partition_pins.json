@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "par_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "par_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ser_in",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "par_in[5]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

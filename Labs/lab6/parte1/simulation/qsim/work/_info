@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ec2016/ra165232/MC613/lab6/parte1novo/simulation/qsim
+Elatches_ffs
+Z1 w1523464422
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 YZlobdkPHzE;N99jHfcMc3
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 WF17oJHHbo`b[5Bl5P6_h0
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 dfin^_@l97Ngz6cK0kjS62
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z10 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z11 8parte1.vho
+Z12 Fparte1.vho
+l0
+L38
+V7;4Ug@Um[2dFOdcZ7`JR60
+!s100 eOj3N3[3kRFWGmNY?LChI3
+Z13 OV;C;10.5b;63
+32
+Z14 !s110 1523464422
+!i10b 1
+Z15 !s108 1523464422.000000
+Z16 !s90 -work|work|parte1.vho|
+Z17 !s107 parte1.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 11 latches_ffs 0 22 7;4Ug@Um[2dFOdcZ7`JR60
+l98
+L49
+Vbbm8^_T@`S^D9Gc[O^;X10
+!s100 ic>cW5gQLjDa2>?Le6MkV1
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Elatches_ffs_vhd_vec_tst
+Z20 w1523464421
+R8
+R9
+R0
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L31
+V8NR5Czlgd@cObP]^Y<TGn0
+!s100 Lg;8TE[@H9Ah9iK3GKQ?R1
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Alatches_ffs_arch
+R8
+R9
+Z25 DEx4 work 23 latches_ffs_vhd_vec_tst 0 22 8NR5Czlgd@cObP]^Y<TGn0
+l52
+L33
+Z26 V3n[EoTKK1KY0g_lc0?KjO1
+Z27 !s100 Rb:Vn[5>U9?bcP`0X_D7?1
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

@@ -1,0 +1,15 @@
+|zbuffer
+my_in[0] => my_out[0].DATAIN
+my_in[1] => my_out[1].DATAIN
+my_in[2] => my_out[2].DATAIN
+my_in[3] => my_out[3].DATAIN
+sel => my_out[3].OE
+sel => my_out[2].OE
+sel => my_out[1].OE
+sel => my_out[0].OE
+my_out[0] <= my_out[0].DB_MAX_OUTPUT_PORT_TYPE
+my_out[1] <= my_out[1].DB_MAX_OUTPUT_PORT_TYPE
+my_out[2] <= my_out[2].DB_MAX_OUTPUT_PORT_TYPE
+my_out[3] <= my_out[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

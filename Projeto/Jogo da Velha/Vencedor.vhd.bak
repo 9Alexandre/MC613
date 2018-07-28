@@ -1,0 +1,83 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+LIBRARY VGA;
+USE VGA.ALL;
+LIBRARY Mouse;
+USE Mouse.ALL;
+USE ieee.numeric_std.ALL;
+LIBRARY WORK;
+USE WORK.ALL;
+
+ENTITY Vencedor IS
+	PORT (
+			jogadas_p1, jogadas_p2	: IN std_logic_vector(9 downto 1);
+			risco: 						: OUT std_logic_vector(3 downto 0)									
+	);
+END ENTITY;
+
+ARCHITECTURE behavior OF Vencedor IS
+BEGIN
+
+	PROCESS()
+	BEGIN
+
+		IF jogadas_p1(1) = '1' and jogadas_p1(2) = '1' and jogadas_p1(3) = '1') OR
+			jogadas_p2(1) = '1' and jogadas_p2(2) = '1' and jogadas_p2(3) = '1') THEN
+				riscos <= "0001";
+		END IF;
+		
+		
+		IF jogadas_p1(4) = '1' and jogadas_p1(5) = '1' and jogadas_p1(6) = '1') OR
+			jogadas_p2(4) = '1' and jogadas_p2(5) = '1' and jogadas_p2(6) = '1') THEN
+				riscos <= "0010";
+		END IF;
+		
+		
+		IF jogadas_p1(7) = '1' and jogadas_p1(8) = '1' and jogadas_p1(9) = '1') OR
+			jogadas_p2(7) = '1' and jogadas_p2(8) = '1' and jogadas_p2(9) = '1') THEN
+				riscos <= "0011";
+		END IF;
+		
+		
+		IF jogadas_p1(1) = '1' and jogadas_p1(4) = '1' and jogadas_p1(7) = '1') OR
+			jogadas_p2(1) = '1' and jogadas_p2(4) = '1' and jogadas_p2(7) = '1') THEN
+				riscos <= "0100";
+		END IF;
+		
+		
+		IF jogadas_p1(2) = '1' and jogadas_p1(5) = '1' and jogadas_p1(8) = '1') OR
+			jogadas_p2(2) = '1' and jogadas_p2(5) = '1' and jogadas_p2(8) = '1') THEN
+				riscos <= "0101";
+		END IF;
+		
+		
+		IF jogadas_p1(3) = '1' and jogadas_p1(6) = '1' and jogadas_p1(9) = '1') OR
+			jogadas_p2(3) = '1' and jogadas_p2(6) = '1' and jogadas_p2(9) = '1') THEN
+				riscos <= "0111";
+		END IF;
+		
+		
+		IF jogadas_p1(3) = '1' and jogadas_p1(5) = '1' and jogadas_p1(7) = '1') OR
+			jogadas_p2(3) = '1' and jogadas_p2(5) = '1' and jogadas_p2(7) = '1') THEN
+				riscos <= "1000";
+		END IF;
+		
+		
+		IF jogadas_p1(1) = '1' and jogadas_p1(5) = '1' and jogadas_p1(9) = '1') OR
+			jogadas_p2(1) = '1' and jogadas_p2(5) = '1' and jogadas_p2(9) = '1') THEN
+				riscos <= "1001";
+		END IF;
+
+
+
+
+
+
+
+
+END behavior;
+
+
+
+
+			

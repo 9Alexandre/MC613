@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, /home/ec2016/ra165232/MC613/Lab 01/Lab01.vwf
+source_file = 1, /home/ec2016/ra165232/MC613/Lab 01/output_files/Lab01.vhd
+source_file = 1, /opt/altera/17.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/altera/17.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/altera/17.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/altera/17.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/ec2016/ra165232/MC613/Lab 01/db/Lab01.cbx.xml
+design_name = Lab01
+instance = comp, \f~output , f~output, Lab01, 1
+instance = comp, \x1~input , x1~input, Lab01, 1
+instance = comp, \x2~input , x2~input, Lab01, 1
+instance = comp, \f~0 , f~0, Lab01, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Lab01, 1

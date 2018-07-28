@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsm_table is
+	port (
+			clock : in std_logic;
+			reset : in std_logic;
+			w : in std_logic;
+			z	: out std_logic;
+  );
+end fsm_table;
+
+architecture structural of fsm_table is
+begin
+
+
+
+
+
+
+end structural;

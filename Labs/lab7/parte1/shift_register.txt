@@ -1,0 +1,6 @@
+A diferença ao utilizar o clock no KEY0 para o clock em SW9 ocorre devido ao fato de KEY0 
+ser um botão, e portanto cada clique era um clock, então os leds iam ligando sucessivamente. 
+Enquanto que o SW(9) é uma alavanca, quando ela sobe, ocorre uma interferencia, então todos
+os lads acendem ao mesmo tempo.
+
+

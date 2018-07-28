@@ -1,0 +1,629 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|hourUn[1]'
+Slack : -5.381
+TNS   : -34.930
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|secDec[1]'
+Slack : -5.374
+TNS   : -34.865
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|hourDec[1]'
+Slack : -5.277
+TNS   : -33.564
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|secUn[1]'
+Slack : -5.209
+TNS   : -33.498
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|minDec[1]'
+Slack : -5.186
+TNS   : -35.077
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|minUn[1]'
+Slack : -5.110
+TNS   : -33.885
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.557
+TNS   : -186.429
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : -3.434
+TNS   : -11.759
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : -3.344
+TNS   : -12.979
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -3.043
+TNS   : -9.779
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : -2.889
+TNS   : -10.718
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -2.734
+TNS   : -9.843
+
+Type  : Slow 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -2.586
+TNS   : -9.072
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.982
+TNS   : -3.225
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|hourDec[1]'
+Slack : -0.630
+TNS   : -0.630
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -0.273
+TNS   : -0.273
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -0.084
+TNS   : -0.084
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|minDec[1]'
+Slack : -0.068
+TNS   : -0.068
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -0.004
+TNS   : -0.004
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|minUn[1]'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|hourUn[1]'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|secUn[1]'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.599
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.687
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.740
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock:clock_inst|secDec[1]'
+Slack : 0.917
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -37.356
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|minDec[1]'
+Slack : 0.269
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|hourDec[1]'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|minUn[1]'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|hourUn[1]'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|secDec[1]'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|secUn[1]'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|hourUn[1]'
+Slack : -5.444
+TNS   : -35.328
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|hourDec[1]'
+Slack : -5.395
+TNS   : -33.847
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|secDec[1]'
+Slack : -5.378
+TNS   : -35.480
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|secUn[1]'
+Slack : -5.328
+TNS   : -33.943
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|minDec[1]'
+Slack : -5.212
+TNS   : -35.444
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|minUn[1]'
+Slack : -5.140
+TNS   : -34.213
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : -3.419
+TNS   : -11.594
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.342
+TNS   : -180.521
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : -3.309
+TNS   : -12.672
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -3.018
+TNS   : -9.628
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : -2.822
+TNS   : -10.406
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -2.813
+TNS   : -9.963
+
+Type  : Slow 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -2.636
+TNS   : -9.104
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -1.054
+TNS   : -5.438
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|hourDec[1]'
+Slack : -0.654
+TNS   : -0.654
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -0.255
+TNS   : -0.255
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -0.174
+TNS   : -0.191
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|minDec[1]'
+Slack : -0.157
+TNS   : -0.157
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -0.041
+TNS   : -0.041
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|minUn[1]'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|secUn[1]'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|hourUn[1]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.628
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock:clock_inst|secDec[1]'
+Slack : 0.785
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -40.586
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|minDec[1]'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|hourDec[1]'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|minUn[1]'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|secDec[1]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|secUn[1]'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|hourUn[1]'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|secDec[1]'
+Slack : -2.690
+TNS   : -16.547
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|hourUn[1]'
+Slack : -2.666
+TNS   : -16.883
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|secUn[1]'
+Slack : -2.558
+TNS   : -15.759
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|minDec[1]'
+Slack : -2.533
+TNS   : -16.999
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|hourDec[1]'
+Slack : -2.525
+TNS   : -16.112
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|minUn[1]'
+Slack : -2.519
+TNS   : -16.081
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.505
+TNS   : -91.555
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : -1.767
+TNS   : -5.884
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : -1.695
+TNS   : -6.479
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -1.478
+TNS   : -4.531
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : -1.422
+TNS   : -5.264
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -1.283
+TNS   : -4.631
+
+Type  : Fast 1100mV 85C Model Setup 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -1.104
+TNS   : -3.840
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.404
+TNS   : -0.429
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|hourDec[1]'
+Slack : -0.306
+TNS   : -0.306
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -0.070
+TNS   : -0.070
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.104
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|minDec[1]'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|hourUn[1]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|minUn[1]'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|secUn[1]'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|secDec[1]'
+Slack : 0.537
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.602
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.089
+TNS   : -6.278
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|minDec[1]'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|hourDec[1]'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|minUn[1]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|secDec[1]'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|secUn[1]'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|hourUn[1]'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|hourUn[1]'
+Slack : -2.495
+TNS   : -15.819
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|secDec[1]'
+Slack : -2.491
+TNS   : -15.569
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|secUn[1]'
+Slack : -2.387
+TNS   : -14.865
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|hourDec[1]'
+Slack : -2.386
+TNS   : -15.077
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|minDec[1]'
+Slack : -2.375
+TNS   : -15.941
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|minUn[1]'
+Slack : -2.351
+TNS   : -15.108
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.007
+TNS   : -75.213
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : -1.552
+TNS   : -5.132
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : -1.498
+TNS   : -5.691
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : -1.310
+TNS   : -3.941
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : -1.253
+TNS   : -4.567
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -1.169
+TNS   : -4.110
+
+Type  : Fast 1100mV 0C Model Setup 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -1.005
+TNS   : -3.454
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.458
+TNS   : -0.831
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|hourDec[1]'
+Slack : -0.295
+TNS   : -0.295
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : -0.066
+TNS   : -0.066
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : -0.025
+TNS   : -0.025
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|minDec[1]'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|hourUn[1]'
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|minUn[1]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|secUn[1]'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.413
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|secDec[1]'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.086
+TNS   : -6.124
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|minDec[1]'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecDec|display[0]'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinUn|display[0]'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|hourDec[1]'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayMinDec|display[0]'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|minUn[1]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaHouRUn|display[0]'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|secDec[1]'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|secUn[1]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|hourUn[1]'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displayHourDec|display[0]'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock:clock_inst|bin2dec:displaySecUn|display[0]'
+Slack : 0.486
+TNS   : 0.000
+
+------------------------------------------------------------

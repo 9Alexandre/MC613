@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Fedora Core",
+		"os_version" : ""
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "Segment Violation at 0x44",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7f3e28c29a97: ccl_ipc + 0x4a97 (_ZN11IPC_COMMAND3runERKSsS1_bPjS1_b + 0x77f)\n\t0x7f3e41aa4cd0: mega_ipcatalog + 0x17cd0 (_Z21ipcatalog_thread_procPv + 0x96)\n\t0x7f3e0751202c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7f3e0a1ba7df: ccl_msg + 0x407df (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7f3e07b83559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7f3e07950f92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7f3e075123f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7f3e075126d2: ccl_thr + 0x66d2 (thr_thread_begin + 0x46)\n\t0x7f3e032d250b: pthread.so.0 + 0x750b (start_thread + 0xdb)\n\t0x7f3e0218c16f: c.so.6 + 0xf516f (clone + 0x3f)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "17.1.0",
+		"build" : "590",
+		"edition" : "Lite Edition"
+	}
+}

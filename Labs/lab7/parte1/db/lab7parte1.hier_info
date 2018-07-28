@@ -1,0 +1,35 @@
+|shift_register
+clk => par_out[0]~reg0.CLK
+clk => par_out[1]~reg0.CLK
+clk => par_out[2]~reg0.CLK
+clk => par_out[3]~reg0.CLK
+clk => par_out[4]~reg0.CLK
+clk => par_out[5]~reg0.CLK
+clk => temp[0].CLK
+clk => temp[1].CLK
+clk => temp[2].CLK
+clk => temp[3].CLK
+clk => temp[4].CLK
+clk => temp[5].CLK
+mode[0] => Equal0.IN1
+mode[0] => Equal1.IN0
+mode[0] => Equal2.IN1
+mode[1] => Equal0.IN0
+mode[1] => Equal1.IN1
+mode[1] => Equal2.IN0
+ser_in => temp.DATAB
+ser_in => temp.DATAB
+par_in[0] => temp.DATAB
+par_in[1] => temp.DATAB
+par_in[2] => temp.DATAB
+par_in[3] => temp.DATAB
+par_in[4] => temp.DATAB
+par_in[5] => temp.DATAB
+par_out[0] <= par_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[1] <= par_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[2] <= par_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[3] <= par_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[4] <= par_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+par_out[5] <= par_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

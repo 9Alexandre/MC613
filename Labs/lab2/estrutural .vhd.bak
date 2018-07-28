@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity estrutural IS
+
+	Port (A, B, C, D, E : IN std_logic;
+			F : OUT std_logic);
+End estrutural;
+
+Architecture behavior OF estrutural IS
+	signal i0, i2, i5, i8, i13, i15, i18, i21, i24, i29, i31  : std_logic;
+	signal or1 : std_logic;
+	
+Begin
+
+	i0 <= not A and not B and not C and not D and not E;
+	i2 <= not A and not B and not C and D and not E;
+	i5 <= not A and not B and C and not D and E;
+	i8 <= not A and B and not C and not D and not E;
+	i13 <= not A and B and C and not D and E;
+	i15 <= not A and B and C and D and E;
+	i18 <= A and not B and not C and D and not E;
+	i21 <= A and not B and C and not D and E;
+	i24 <= A and B and not C and not D and not E;
+	i29 <= A and B and C and not D and E;
+	i31 <= A and B and C and D and E;
+	or1 <= i0 or i2 or i5 or i8 or i13 or i15 or i18 or i21 or i24 or i29 or i31; 
+ 
+End behavior;

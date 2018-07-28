@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, /home/ec2016/ra165232/MC613/Lab01.bdf
+source_file = 1, /home/ec2016/ra165232/MC613/Lab01.vwf
+source_file = 1, /home/ec2016/ra165232/MC613/db/Lab01.cbx.xml
+design_name = Lab01
+instance = comp, \f~output , f~output, Lab01, 1
+instance = comp, \x1~input , x1~input, Lab01, 1
+instance = comp, \x2~input , x2~input, Lab01, 1
+instance = comp, \inst2~0 , inst2~0, Lab01, 1

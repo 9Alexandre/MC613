@@ -1,0 +1,71 @@
+|fsm_board
+SW[0] => fsm_seq:seq.w
+SW[1] => fsm_seq:seq.reset
+SW[2] => ~NO_FANOUT~
+SW[3] => ~NO_FANOUT~
+SW[4] => fsm_diag:diag.w
+SW[5] => fsm_diag:diag.reset
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => fsm_table:table.w
+SW[9] => fsm_table:table.reset
+KEY[1] => fsm_seq:seq.clock
+KEY[2] => fsm_diag:diag.clock
+KEY[3] => fsm_table:table.clock
+LEDR[0] <= fsm_seq:seq.z
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= fsm_diag:diag.z
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= fsm_table:table.z
+LEDR[9] <= <GND>
+
+
+|fsm_board|fsm_table:table
+clock => y~3.DATAIN
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+w => Selector0.IN3
+w => y.DATAA
+w => Selector1.IN3
+w => Selector1.IN2
+w => y.DATAB
+w => Selector0.IN2
+w => y.DATAB
+w => y.DATAB
+z <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fsm_board|fsm_diag:diag
+clock => y~5.DATAIN
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+w => y.DATAB
+w => y.DATAA
+w => Selector0.IN1
+w => Selector1.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fsm_board|fsm_seq:seq
+clock => y~5.DATAIN
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+reset => y.OUTPUTSELECT
+w => y.DATAA
+w => y.DATAB
+w => y.DATAB
+w => Selector0.IN1
+w => Selector1.IN1
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+

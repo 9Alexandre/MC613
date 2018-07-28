@@ -1,0 +1,13 @@
+somador 4 bits		Delay
+ripple carry 		8.070 
+​carry look-ahead 	7.778
+
+somador 8 bits		Delay
+ripple carry 		11.495
+cla parcial		8.902
+cla puro		8.902
+
+
+
+
+
